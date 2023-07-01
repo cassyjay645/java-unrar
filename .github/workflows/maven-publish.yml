@@ -32,6 +32,7 @@ jobs:
     - name: tarz
       run: tar xzf paxk.tar.gz target
       
-    - uses: actions/upload-artifact@latest
+    - uses: actions/upload-artifact@v3
       with: 
+        name: pack
         path: target.tar.gz
